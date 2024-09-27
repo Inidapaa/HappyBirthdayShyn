@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Memastikan padding dan margin tidak mempengaruhi ukuran elemen */
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Memastikan body mengambil tinggi penuh viewport */
+}
+
+.container {
+    display: flex; /* Menggunakan flexbox untuk menyeimbangkan konten */
+    flex-direction: column; /* Mengatur orientasi konten secara vertikal */
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Lebar responsif */
+    max-width: 600px; /* Lebar maksimum agar tidak terlalu lebar di layar besar */
+}
+
+.head {
+    margin: 20px 0; /* Margin atas dan bawah */
+    text-align: center;
+}
+
+.head .judul {
+    color: rgb(100, 100, 100);
+    font-size: 24px; /* Ukuran font judul */
+}
+
+.head .sub-judul {
+    padding-top: 5px;
+    font-style: italic;
+    font-size: 18px; /* Ukuran font sub-judul */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Mengatur konten di dalamnya secara vertikal */
+}
+
+.content .button-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Jarak atas untuk button */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none; 
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(0.95);
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .head .judul {
+        font-size: 20px; /* Ukuran font judul untuk layar kecil */
+    }
+
+    .head .sub-judul {
+        font-size: 16px; /* Ukuran font sub-judul untuk layar kecil */
+    }
+
+    .button {
+        padding: 8px 16px; /* Ukuran button yang lebih kecil */
+        font-size: 14px; /* Ukuran font button untuk layar kecil */
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(to bottom, white, grey);
+    margin: 50px auto; /* Mengatur margin otomatis untuk center */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: auto; /* Biarkan tinggi otomatis untuk konten */
+}
+
+.judul {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2rem; /* Ukuran font untuk judul */
+}
+
+/* Container untuk pesan-kesan */
+.pesan-kesan {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Lebar responsif */
+    max-width: 800px; /* Lebar maksimum */
+}
+
+/* Pesan individu */
+.pesan {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 20px 0; /* Menghapus margin samping untuk responsif */
+}
+
+.bridge {
+    margin-top: 70px;
+}
+
+.pesan p {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.info {
+    margin-bottom: 70px;
+}
+
+.info p {
+    font-size: 0.7rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem; /* Ukuran font untuk h2 */
+}
+
+p {
+    margin-top: 30px;
+}
+
+.penutup1 {
+    margin-top: 50px;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .judul {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .pesan-kesan {
+        padding: 20px; /* Padding yang lebih kecil */
+    }
+
+    .pesan {
+        padding: 15px; /* Padding yang lebih kecil pada pesan */
+    }
+
+    .pesan p {
+        font-size: 1rem; /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .penutup1 {
+        font-size: 1.2rem; /* Ukuran font lebih kecil untuk penutup */
+    }
+}
